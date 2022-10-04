@@ -8,7 +8,7 @@ def encerrarP():
         time.sleep(1)
 
 
-# -------------------- Sem a tranca --------------------
+# ------------------- Sem a tranca -------------------
 
 def contagemR():
     for i in range(10):
@@ -29,7 +29,7 @@ def geracaoA():
         time.sleep(1)
 
 
-# -------------------- Com a tranca --------------------
+# ------------------- Com a tranca -------------------
 
 def l_contagemR(tranca):
     for i in range(10):

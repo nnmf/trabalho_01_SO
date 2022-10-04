@@ -46,7 +46,7 @@ def esc_noLock():
 
 
 def esc_lock():
-    # declaro três threads diferentes, cada uma executando uma função diferente e um objeto tranca(lock) para
+    # Declaro três threads diferentes, cada uma executando uma função diferente e um objeto tranca(lock) para
     # evitar bug na hora do print. Ao aplicar o objeto lock na função, quando ela chega na hora crítica (na par-
     # te de printar) nós impedimos as outras threads de acessar a sessão até que a tranca seja desfeita. Assim,
     # nós impedimos que o print saia com algum bug.
@@ -55,12 +55,12 @@ def esc_lock():
     P = threading.Thread(target=l_contagemP, args=(tranca,))
     A = threading.Thread(target=l_geracaoA, args=(tranca,))
 
-    # inicio as execuções das threads
+    # Inicio as execuções das threads
     R.start()
     P.start()
     A.start()
 
-    # faço com que o programa continue apenas quando todas as execuções acabarem
+    # Faço com que o programa continue apenas quando todas as execuções acabarem
     R.join()
     P.join()
     A.join()

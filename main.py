@@ -1,8 +1,8 @@
 from escolha import esc
 
-# programa rodado com python versão 3.10.7
+# Programa rodado com python versão 3.10.7
 
-# o programa é bem simples. No auxiliar tem três funções, uma faz uma contagem regressiva, outra faz uma
+# O programa é bem simples. No auxiliar tem três funções, uma faz uma contagem regressiva, outra faz uma
 # contagem progressiva e a última gera números aleatórios de 1 a 100. O programa roda os três em simultâneo,
 # o que diferencia são as letras no começo dos prints: R - Contagem Regressiva, P - Contagem Progressiva e
 # A - Geração Aleatória de Números.
