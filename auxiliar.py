@@ -35,16 +35,18 @@ def l_contagemR(tranca):
     for i in range(10):
         tranca.acquire() # "Tranco" o ponto crítico dessa thread
         print("R - Contagem Regressiva: ", 10 - i)
+        tranca.release()  # Desfaço a tranca
         time.sleep(1)
-        tranca.release() # Desfaço a tranca
+
 
 
 def l_contagemP(tranca):
     for i in range(10):
         tranca.acquire()
         print("P - Contagem Progressiva: ", i + 1)
-        time.sleep(1)
         tranca.release()
+        time.sleep(1)
+
 
 
 def l_geracaoA(tranca):
@@ -52,5 +54,5 @@ def l_geracaoA(tranca):
         n = random.randint(1, 100)
         tranca.acquire()
         print("A - Numero Aleatorio gerado: ", n)
-        time.sleep(1)
         tranca.release()
+        time.sleep(1)
